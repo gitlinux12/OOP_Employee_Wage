@@ -1,22 +1,25 @@
 package OOP_Employee_Edge;
 
 public class WelcomrText_UC1 {
-	int IS_FULL_TIME = 1;
+	public final static int IS_PRESENT = 1;
+	public static double WAGE_PER_HOUR = 20;
+	public static double FULL_DAY_HOUR = 8;
 	
-	public void getAttendance() {
-
-		double empCheck = Math.floor(Math.random() * 10) % 2;
-		if (empCheck == IS_FULL_TIME)
-		   System.out.println("Employee is present");
-		else
-		   System.out.println("Employee is absent");
+	public static int attendance() {
+		if ((int) Math.floor(Math.random() * 10) % 2 == IS_PRESENT) {
+			System.out.println("Emplyee is present.");
+			System.out.println("Employee daily wage is "+(FULL_DAY_HOUR * WAGE_PER_HOUR));
+			return IS_PRESENT;
+		} else {
+			System.out.println("Employee is absenet.");
+			System.out.println("Employee daily wage is 0");
+			return 0;
 		}
-
-
+	}
+	
 	public static void main(String[] args) {
-		WelcomrText_UC1 emp = new WelcomrText_UC1();
-		emp.getAttendance();
-
+		System.out.println("Welcome to Employee Wage Computation Program");
+		attendance();
 	}
 
 }
