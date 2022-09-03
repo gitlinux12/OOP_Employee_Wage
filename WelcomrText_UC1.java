@@ -8,6 +8,7 @@ public class WelcomrText_UC1 {
 		public static double FULL_DAY_HOUR = 8;
 		public static double PART_TIME_HOUR = 4;
 		public static int WORKING_DAYS = 20;
+
 		public static double MONTHLY_HOUR_LIMIT = 100;
 		
 		public static double monthWages = 0;
