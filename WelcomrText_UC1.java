@@ -46,9 +46,6 @@ public class WelcomrText_UC1 {
 			return monthWages;
 		}
 		
-		public static void main(String[] args) {
-			System.out.println("Welcome to Employee Wage Computation Program");
-			System.out.println("Monthly wage for employee is "+monthlyWage());
-		}
+		
 
 }
